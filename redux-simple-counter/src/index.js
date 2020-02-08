@@ -32,3 +32,7 @@ const colors = document.getElementById('colors');
 colors.addEventListener('change', e => {
     dispatch({ type: "COLORS", color: e.target.value })
 });
+
+//Dispatch the "changeNumber" action to change the number
+const changeNumber = document.getElementById('changeNumber');
+changeNumber.addEventListener('change', e => dispatch({ type: "CHANGENUMBER", value: e.target.value }));
